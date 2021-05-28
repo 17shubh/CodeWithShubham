@@ -1,0 +1,104 @@
+{% extends 'base.html' %} {% block body %}
+<div class="container my-4">
+  <div
+    id="carouselExampleControls"
+    class="carousel slide"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/static/1.JPG" class="d-block w-100" alt="..." />
+      </div>
+      <div class="carousel-item">
+        <img src="/static/2.JPG" class="d-block w-100" alt="..." />
+      </div>
+      <div class="carousel-item">
+        <img src="/static/3.JPG" class="d-block w-100" alt="..." />
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleControls"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleControls"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col">
+      <div class="card shadow-sm">
+        <img
+          src="https://source.unsplash.com/1600x900/?electronics"
+          class="d-block w-100"
+          alt="..."
+        />
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">
+                ADD TO CART
+              </button>
+            </div>
+            <small class="text-muted">Phones and Cameras</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img
+          src="https://source.unsplash.com/1600x900/?cars"
+          class="d-block w-100"
+          alt="..."
+        />
+        <div class="card-body">
+          <p class="card-text"></p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">
+                ADD TO CART
+              </button>
+            </div>
+            <small class="text-muted">Cars</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img
+          src="https://source.unsplash.com/1600x900/?toys,fan"
+          class="d-block w-100"
+          alt="..."
+        />
+
+        <div class="card-body">
+          <p class="card-text"></p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">
+                ADD TO CART
+              </button>
+            </div>
+            <small class="text-muted">Chips</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock body %}
